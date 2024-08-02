@@ -1,0 +1,96 @@
+/*TYPOGRAPHY */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/*CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey_700: hsl(0, 0%, 20%);
+  --grey_800: hsl(0, 0%, 12%);
+  --grey_900: hsl(0, 0%, 8%);
+}
+
+/*STYLES*/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey_900);
+  height: 100vh;
+  margin: 0;
+  color: var(--white);
+}
+
+.card {
+  background-color: var(--grey_800);
+  width: 400px;
+  padding: 30px 35px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.image {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+address {
+  font-weight: 600;
+  color: var(--green);
+  font-size: 14px;
+}
+
+.title1 {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 25px;
+  color: var(--white);
+}
+
+.links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.links li {
+  margin-top: 15px;
+  background-color: var(--grey_700);
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 6px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.links li:hover {
+  background-color: var(--green);
+  transform: scale(1.05);
+}
+
+.links li a {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transform: color ease;
+}
+
+.links li a:hover {
+  color: black;
+}
